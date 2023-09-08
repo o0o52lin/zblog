@@ -14,7 +14,7 @@ if [ "${is64bit}" != '64' ];then
 fi
 
 UbuntuCheck=$(cat /etc/issue|grep Ubuntu|awk '{print $2}'|cut -f 1 -d '.')
-if [ "${UbuntuCheck}" -lt "16" ];then
+if [ "${UbuntuCheck}" -lt "11" ];then
 	echo "Ubuntu ${UbuntuCheck}不支持安装宝塔面板，建议更换Ubuntu18/20安装宝塔面板"
 	exit 1
 fi
@@ -29,9 +29,7 @@ if [ "$1" ];then
 fi
 
 GetSysInfo(){
-	if [ -s "/etc/redhat-release" ];then
-		SYS_VERSION=$(cat /etc/redhat-release)
-	elif [ -s "/etc/issue" ]; then
+	if [ -s "/etc/issue" ]; then
 		SYS_VERSION=$(cat /etc/issue)
 	fi
 	SYS_INFO=$(uname -a)
