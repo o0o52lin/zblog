@@ -14,8 +14,7 @@ if (!$zbp->CheckPlugin('staticize')) {
 
 $cmd = trim($_REQUEST['cmd']);
 if ($cmd == '') {
-    $zbp->ShowError('命令为空.');
-    die();
+    die('命令为空.');
 }
 
 $output = array();
