@@ -1,2 +1,3 @@
 zb_users/c_option.php
 zb_users/data/*.db
+zb_users/cache/*
