@@ -13,12 +13,6 @@ if [ "${is64bit}" != '64' ];then
 	Red_Error "抱歉, 当前面板版本不支持32位系统, 请使用64位系统或安装宝塔5.9!";
 fi
 
-Centos6Check=$(cat /etc/redhat-release | grep ' 6.' | grep -iE 'centos|Red Hat')
-if [ "${Centos6Check}" ];then
-	echo "Centos6不支持安装宝塔面板，请更换Centos7/8安装宝塔面板"
-	exit 1
-fi 
-
 UbuntuCheck=$(cat /etc/issue|grep Ubuntu|awk '{print $2}'|cut -f 1 -d '.')
 if [ "${UbuntuCheck}" -lt "16" ];then
 	echo "Ubuntu ${UbuntuCheck}不支持安装宝塔面板，建议更换Ubuntu18/20安装宝塔面板"
