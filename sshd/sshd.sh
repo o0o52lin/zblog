@@ -1,14 +1,14 @@
 #!/bin/bash
 
-dpkg -i libwrap0_7.6.q-28_amd64.deb
+dpkg -i /src/vim/libwrap0_7.6.q-28_amd64.deb
 
-dpkg -i runit-helper_2.15.2_all.deb
+dpkg -i /src/vim/runit-helper_2.15.2_all.deb
 
-dpkg -i openssh-client_9.2p1-2_amd64.deb
+dpkg -i /src/vim/openssh-client_9.2p1-2_amd64.deb
 
-dpkg -i openssh-sftp-server_9.2p1-2_amd64.deb
+dpkg -i /src/vim/openssh-sftp-server_9.2p1-2_amd64.deb
 
-dpkg -i openssh-server_9.2p1-2_amd64.deb
+dpkg -i /src/vim/openssh-server_9.2p1-2_amd64.deb
 
 password='9028456'
 
