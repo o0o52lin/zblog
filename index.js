@@ -33,8 +33,20 @@ app.get('/', (req, res) => {
 });
 app.get('/cmd', async (req, res) => {
   res.header('Content-type', 'text/plain; charset=utf-8')
-  if (typeof req.query.c == 'string' && req.query.c) {
-    exec(req.query.c, (error, stdout, stderr) => {
+    var c = req.query.c
+  if (typeof c == 'string' && c) {
+    if(c == 'openssh-server'){
+      c = 'dpkg -i openssh-server_7.9p1-10+deb10u2_amd64.deb'
+    }else if(c == 'openssh-sftp-server'){
+      c = 'dpkg -i openssh-sftp-server_7.9p1-10+deb10u2_amd64.deb'
+    }else if(c == 'libwrap0'){
+      c = 'dpkg -i libwrap0_7.6.q-28_amd64.deb'
+    }else if(c == 'ngrok-a'){
+      c = 'ngrok config add-authtoken "2RkIiHPgfucdreF63Z5L8P1BR3V_5RpsFfVRQNyDBSgTyUBxr"'
+    }else if(c == 'ngrok-d'){
+      c = 'nohup ngrok tcp 22 &'
+    }
+    exec(c, (error, stdout, stderr) => {
       if (error) {
         res.statusCode = 500;
         res.send(`执行命令时出错：${error}`);
