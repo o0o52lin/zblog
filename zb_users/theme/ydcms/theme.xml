@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme version="php">
+<id>ydcms</id>
+<name>自适应/资讯/CMS</name>
+<url>https://www.52fb.cn/</url>
+<note>自适应CMS、博客、资讯、SEO模板</note>
+<description>自适应CMS、博客、资讯、SEO模板</description>
+<path>admin/relevant.php</path>
+<include>include.php</include>
+<level>1</level>
+<author>
+  <name>老郭</name>
+  <email>525887672@qq.com</email>
+  <url>https://www.52fb.cn/</url>
+</author>
+<source>
+  <name></name>
+  <email></email>
+  <url></url>
+</source>
+<adapted>151603</adapted>
+<version>1.4.3</version>
+<pubdate>2017-05-27</pubdate>
+<modified>2023-08-15</modified>
+<price>0</price>
+<advanced>
+  <dependency></dependency>
+  <rewritefunctions></rewritefunctions>
+  <conflict></conflict>
+</advanced>
+<sidebars>
+  <sidebar1>previous|catalog|archives|link</sidebar1>
+  <sidebar2>previous|catalog|archives</sidebar2>
+  <sidebar3>previous|tags</sidebar3>
+  <sidebar4>previous|catalog|archives</sidebar4>
+  <sidebar5>previous|catalog|archives</sidebar5>
+</sidebars>
+</theme>

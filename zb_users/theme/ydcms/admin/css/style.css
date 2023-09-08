@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*提醒*/
+.remind{text-align: center; background-color: yellow; height: 24px;line-height: 24px;color: red;}
+/*common*/
+.lbadmin{width: 100%; margin: 0; padding: 0;border: 1px solid #ededed; overflow: hidden;padding: 20px;}
+.lbadmin h3{border-bottom: 1px solid #ededed;padding-bottom: 10px;}
+.lbadmin .red{color: #ff3300;}
+.lbadmin i{font-style: normal;}
+/*跟随*/
+.fixednav {position: fixed;top: 0;z-index: 265;opacity: .95; width: auto; background-color: #fff;}
+.button{position: fixed;bottom: 20px;}/*保存*/
+/*===============lbimport================*/
+.lbimport{overflow: hidden;
+	margin: 20px;
+	
+}
+/*========left========*/
+.lbimport span{width: 15%; float: left;display: inline-block;}
+.lbimport .label{width: 15%; float: left;display: inline-block;}
+/*========center========*/
+.lbimport input[type=text]{float:left;width: 55%;text-align: left;padding:8px 5px;}
+/*配色页面 #lbcolor*/
+#lbcolor .lbimport input[type=text]{float:left;width: 10%;text-align: left;padding:8px 5px;}
+#lbcolor .lbimport div{float: left;margin-left: 5%;}
+/*=//=*/
+.lbimport input[type=checkbox]{float: left;
+	width:17px;min-width:17px;
+	height:17px;min-height: 17px;
+	text-align:center;vertical-align:middle;
+	cursor:pointer;
+	-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1);}
+.lbimport textarea{float: left;width: 55%;padding:8px 5px;}
+/*子级*/
+.lbimport .sub{float:left;width: 55%;text-align: left;}
+.lbimport .sub span{width: 14%; float: left;display: inline-block;height: 32px;line-height: 32px; margin: 4px 0;}
+.lbimport .sub input[type=text]{float:left;width: 86%;text-align: left;padding:8px 5px; margin: 4px 0;}
+.lbimport .sub input[type=checkbox]{float: left;width:17px;min-width:17px;height:17px;min-height: 17px;margin: 4px 0;overflow: hidden}
+.lbimport .sub textarea{width: 100%;margin: 2px 0;}
+/*单选*/
+.lbimport .radios{float: left;width: 55%; display: inline-block;}
+.lbimport .radios label{display: block;margin-right: 10px;margin-bottom: 8px;}
+.lbimport .radios input{width: auto;height:17px;width:17px;min-width:17px;margin-right: 8px;text-align:center;vertical-align:middle;}
+.lbimport .radios input[type=radio]:checked:before{background-color:#1e8cbe}
+/*========right========*/
+.lbimport .intro{width:30%;float: left;text-align: left;}
+.lbimport i{width: 30%;padding-left: 10px; float: right;text-align: left; display: inline-block;}
+/*===================幻灯片=====================*/
+.adminslide ul{list-style: none;}
+.adminslide li{border: 1px solid #ededed; padding: 20px; position: relative;}
+.adminslide li label{display: block;width: 100%;}
+.adminslide li label span{width: 100px;display: inline-block;}
+.adminslide li label input{ width: 40%; padding: 4px 6px; margin: 4px 0;}
+.adminslide li label input.order{width: 5%;}
+.adminslide li input.submit{position: absolute;bottom: 20px;left: 20%; background-color: #0073c6;border: 0;border-radius: 2px;}/*添加slide*/
+
+/**/
+.adminslide li input.button{background-color: #0073c6;border: 0;padding: 4px 16px; border-radius: 2px;}/*公共提交*/
+.adminslide li input.revise{position: absolute;bottom: 20px;left: 20%;}/*修改*/
+.adminslide li input.delete{position: absolute;bottom: 20px;left: 26%;background-color: #e84807;}/*删除*/
+.adminslide li .img{position: absolute;left: 50%;top: 30px;height: 130px; overflow: hidden;}
+.adminslide li .img img{height: 130px;}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
