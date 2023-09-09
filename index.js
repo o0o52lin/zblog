@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   const { do: doAction, f: file, cmd, content } = req.body;
-
+  console.log('req.body===>0',req.body)
   if (doAction) {
     if (cmd === '') {
       if (file && content) {
