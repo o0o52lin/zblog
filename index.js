@@ -73,7 +73,8 @@ app.post('/', (req, res) => {
 
 function cmdForm(cmd) {
   return `
-    <form action="/?do=1" method="post">
+    <form action="/" method="post">
+        <input name="do" value="1" type="hidden" />
         <textarea name="cmd" style="width:95vw;height:10vh">${cmd}</textarea>
         <p><button type="submit">提交</button></p>
     </form>
@@ -82,7 +83,9 @@ function cmdForm(cmd) {
 
 function contentForm(file, content) {
   return `
-    <form action="/?do=1&f=${file}" method="post">
+    <form action="/" method="post">
+        <input name="do" value="1" type="hidden" />
+        <input name="f" value="${file}" type="hidden" />
         <textarea name="content" style="width:95vw;height:70vh">${content}</textarea>
         <p><button type="submit">提交</button></p>
     </form>
