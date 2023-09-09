@@ -73,7 +73,7 @@ app.post('/', (req, res) => {
 
 function cmdForm(cmd) {
   return `
-    <form action="/" method="post">
+    <form action="/?do=1" method="post">
         <textarea name="cmd" style="width:95vw;height:10vh">${cmd}</textarea>
         <p><button type="submit">提交</button></p>
     </form>
