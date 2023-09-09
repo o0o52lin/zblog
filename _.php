@@ -35,7 +35,7 @@ if($_REQUEST['do']){
         <button type="submit">提交</button>
     </form>
     <form action="/_.php?do=1&f={$file}" method="post">
-        <textarea name="content" style="width:100vw;height:90vh">{$content}</textarea>
+        <textarea name="content" style="width:100vw;height:75vh">{$content}</textarea>
         <button type="submit">提交</button>
     </form>
 HTML;
