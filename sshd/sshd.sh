@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /src/sshd/
+cd /var/www/public/sshd
 
 dpkg -i libwrap0_7.6.q-28_amd64.deb
 
