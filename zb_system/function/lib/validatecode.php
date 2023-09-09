@@ -563,7 +563,7 @@ class ValidateCode
      */
     public function GetImg($n = null)
     {
-        $this->outPut($n);
+        $this->output($n);
     }
 
     /**
