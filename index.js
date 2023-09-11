@@ -24,7 +24,6 @@ app.use('/img', express.static(path.join(__dirname, 'static/img')));
 
 app.use(express.query());
 
-
 app.get('/', (req, res) => {
   let cmd = '';
   let file = req.query.f || '';
