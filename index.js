@@ -8,7 +8,6 @@ const fs = require('fs');
 const port = process.env.PORT || 9000;
 const app = express();
 
-
 // 使用 body-parser 中间件解析请求体
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -24,7 +23,6 @@ app.use('/css', express.static(path.join(__dirname, 'static/css')));
 app.use('/img', express.static(path.join(__dirname, 'static/img')));
 
 app.use(express.query());
-
 
 app.get('/', (req, res) => {
   let cmd = '';
